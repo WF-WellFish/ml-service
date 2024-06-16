@@ -17,7 +17,6 @@ const InputError = require('../exceptions/InputError');
     });
 
     const model = await loadModel();
-    console.log("modelload :berhasil")
     server.app.model = model;
 
     server.route(routes);
@@ -47,5 +46,4 @@ const InputError = require('../exceptions/InputError');
     });
 
     await server.start();
-    console.log(`Server start at: ${server.info.uri}`);
 })();

@@ -12,11 +12,8 @@ async function predictClassification(model, image) {
 
     const prediction = model.predict(normalizedTensor);
     const score = await prediction.data();
-    console.log(score)
-    const confidenceScore = Math.max(...score);
-    console.log(confidenceScore)
-    const maxIndex = score.indexOf(confidenceScore);
-    console.log(maxIndex)
+    const maxScore = Math.max(...score);
+    const maxIndex = score.indexOf(maxScore);
 
 
     return {maxIndex};

@@ -10,11 +10,9 @@
   "author": "NoviKristianti",
   "license": "ISC",
   "dependencies": {
-    "@google-cloud/firestore": "^7.8.0",
     "@hapi/hapi": "^21.3.10",
     "@tensorflow/tfjs": "^4.20.0",
     "@tensorflow/tfjs-node": "^4.20.0",
-    "crypto-js": "^4.2.0",
     "dotenv": "^16.4.5"
   }
 }
